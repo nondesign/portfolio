@@ -1,0 +1,72 @@
+// 変数の定義
+
+//　色
+$orange : #FAC671;
+$yellow: #F4E862;
+$green: #A7CB95;
+
+
+//　ブレイクポイント
+$tab: 768px;
+$desk: 1024px;
+
+@mixin mq($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+/*===========================
+･･･Base
+=============================*/
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  font-size: .875rem;
+
+  a {
+    color: #333;
+  }
+}
+
+.clr:after {
+content: "";
+display: block;
+clear: both;
+}
+
+[lang="en"] {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'Staatliches', cursive;
+}
+
+@media screen and (min-width: $tab) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+
+/*===========================
+･･･layout
+=============================*/
+
+.l-wrapper {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*========
+･･･アクセシビリティ
+=============================*/
+.screen-reader-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+}

@@ -1,0 +1,20 @@
+.l-footer {
+  padding: 1.5rem 0;
+}
+
+.l-footer__title {
+  float: left;
+}
+
+.l-footer__nav {
+  float: right;
+
+  li {
+    float: left;
+  }
+}
+
+.l-footer__copyright {
+  clear: both;
+  text-align: center;
+}

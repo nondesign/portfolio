@@ -1,0 +1,609 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ’’;
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+/*===========================
+･･･Base
+=============================*/
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  font-size: .875rem;
+}
+
+body a {
+  color: #333;
+}
+
+.clr:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+[lang="en"] {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'Staatliches', cursive;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+/*===========================
+･･･layout
+=============================*/
+.l-wrapper {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*========
+･･･アクセシビリティ
+=============================*/
+.screen-reader-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+}
+
+/*===========================
+･･･animation
+=============================*/
+.fadein {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  body a {
+    font-size: 16px;
+  }
+}
+
+/*===========================
+･･･header
+=============================*/
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: #fff;
+}
+
+.l-site-title {
+  float: left;
+  padding: 1rem 0;
+}
+
+.l-site-title__sub {
+  display: block;
+  font-size: 2rem;
+}
+
+#l-nav__list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 6rem 0 0;
+  font-size: 1.5rem;
+  text-align: center;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+#l-nav__list a {
+  display: block;
+  padding: 1rem 0;
+  -webkit-transition: 0.2s- ease-in-out;
+  transition: 0.2s- ease-in-out;
+}
+
+#l-nav__list li:nth-child(1) a:hover {
+  background: #FAC671;
+}
+
+#l-nav__list li:nth-child(2) a:hover {
+  background: #F4E862;
+}
+
+#l-nav__list li:nth-child(3) a:hover {
+  background: #A7CB95;
+}
+
+.is-active-drawer #l-nav__list {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .l-site-title__sub {
+    font-size: 2.5rem;
+  }
+  .l-nav {
+    float: right;
+    padding: 2rem 0 0;
+  }
+  #l-nav__list {
+    position: static;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+  #l-nav__list li {
+    float: left;
+  }
+  #l-nav__list li + li {
+    margin: 0 0 0 4.5rem;
+  }
+  #l-nav__list a {
+    display: block;
+    border-bottom: 5px solid transparent;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    font-size: 1.25rem;
+  }
+  #l-nav__list a:hover {
+    border-color: #A7CB95;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+}
+
+/*===========================
+･･･main
+=============================*/
+.l-main {
+  padding: 6.25rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .l-main {
+    padding: 7.25rem 0;
+  }
+}
+
+/*===========================
+･･･section
+=============================*/
+.l-section {
+  padding: 4rem 0;
+}
+
+.l-section:nth-of-type(2n) {
+  background: #eee;
+}
+
+.l-section__title {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 0 3rem;
+  letter-spacing: 5px;
+}
+
+.section__title_sub {
+  font-size: 4rem;
+  text-shadow: 2px 2px 5px #ccc;
+  -webkit-text-stroke: 1px #FFF;
+  text-stroke: 1px #FFF;
+  display: block;
+}
+
+.section__title_orange {
+  color: #FAC671;
+}
+
+.section__title_yellow {
+  color: #F4E862;
+}
+
+.section__title_green {
+  color: #A7CB95;
+}
+
+@media screen and (min-width: 768px) {
+  .l-section {
+    padding: 7.625rem 0;
+  }
+  .section__title_sub {
+    font-size: 5rem;
+  }
+}
+
+/*===========================
+･･･About
+=============================*/
+.l-about__profile {
+  padding: 20px;
+  border: 20px solid #FAC671;
+  height: auto;
+}
+
+.l-about__profile__img img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.l-about__profile__text {
+  padding: 1rem 0 0;
+}
+
+.about__profile__name {
+  font-size: 2rem;
+  line-height: 1;
+  display: inline-block;
+}
+
+.about__profile__age {
+  display: block;
+  margin: 0 0 .7rem;
+}
+
+.l-about__message {
+  background: url(../../img/icon-cat.png) no-repeat right 250px;
+}
+
+.l-about__message__title {
+  font-size: 2rem;
+}
+
+.l-about__message__contents {
+  margin: 0 0 2rem;
+  font-size: .95rem;
+}
+
+.l-about__message__contents:first-child .l-about__message__title {
+  margin: 1rem 0 0;
+}
+
+.profile__unit__left {
+  margin: 0 0 0 11rem;
+}
+
+@media screen and (min-width: 768px) {
+  .l-about__profile {
+    float: left;
+    width: 50%;
+  }
+  .l-about__message {
+    float: right;
+    width: calc(50% - 1rem);
+    background: url(../../img/icon-cat.png) no-repeat right 250px;
+  }
+}
+
+/*===========================
+･･･Career
+=============================*/
+.l-career {
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+
+.l-career__date {
+  float: left;
+  width: 30%;
+}
+
+.l-career__text {
+  float: right;
+  width: 70%;
+}
+
+.l-career__date,
+.l-career__text {
+  margin: 0 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .l-career {
+    width: 80%;
+  }
+}
+
+/*===========================
+･･･Skill
+=============================*/
+.skill-list__img {
+  float: left;
+  width: 20%;
+}
+
+.skill-list__contents {
+  float: left;
+  width: 70%;
+}
+
+@media screen and (min-width: 768px) {
+  .l-skill-list li {
+    width: 50%;
+    float: left;
+  }
+}
+
+.skill_list__percentage.active {
+  width: 100%;
+  background: #ccc;
+  text-align: right;
+  position: relative;
+}
+
+.skill_list__percentage.active:after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -webkit-animation: percentage 2s ease-in-out 1 forwards;
+          animation: percentage 2s ease-in-out 1 forwards;
+}
+
+@-webkit-keyframes percentage {
+  0% {
+    width: 0%;
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671));
+    background: linear-gradient(to right, #FAC671);
+  }
+  100% {
+    width: 80%;
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F4E862));
+    background: linear-gradient(to right, #FAC671, #F4E862);
+  }
+}
+
+@keyframes percentage {
+  0% {
+    width: 0%;
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671));
+    background: linear-gradient(to right, #FAC671);
+  }
+  100% {
+    width: 80%;
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F4E862));
+    background: linear-gradient(to right, #FAC671, #F4E862);
+  }
+}
+
+/*========
+･･･モジュール・ハンバーガー
+=============================*/
+.button-hamburger {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 2.5%;
+  z-index: 200;
+  width: 24px;
+  height: 24px;
+  margin: auto 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin: auto;
+  background: #333;
+}
+
+.hamburger:before, .hamburger:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  position: absolute;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.hamburger:before {
+  top: -5px;
+}
+
+.hamburger:after {
+  bottom: -5px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-hamburger {
+    display: none;
+  }
+}
+
+.is-active-drawer .hamburger {
+  background: transparent;
+}
+
+.is-active-drawer .hamburger:before, .is-active-drawer .hamburger:after {
+  top: 0;
+  background: #333;
+}
+
+.is-active-drawer .hamburger:before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.is-active-drawer .hamburger:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.l-footer {
+  padding: 1.5rem 0;
+}
+
+.l-footer__title {
+  float: left;
+}
+
+.l-footer__nav {
+  float: right;
+}
+
+.l-footer__nav li {
+  float: left;
+}
+
+.l-footer__copyright {
+  clear: both;
+  text-align: center;
+}

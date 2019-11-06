@@ -1,0 +1,294 @@
+/*===========================
+･･･main
+=============================*/
+.l-main {
+	padding: 6.25rem 0;
+}
+
+
+@media screen and (min-width: $tab) {
+  .l-main {
+      padding: 7.25rem 0;
+  }
+}
+/*===========================
+･･･section
+=============================*/
+
+.l-section {
+  padding: (64px/16px)*1rem 0;
+}
+
+.l-section:nth-of-type(2n) {
+  background: #eee;
+}
+
+.l-section__title {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 0 (48px/16px)*1rem;
+  letter-spacing: 5px;
+}
+
+.section__title_sub {
+  font-size: (64px/16px)*1rem;
+  text-shadow: 2px 2px 5px #ccc;
+  -webkit-text-stroke: 1px #FFF;
+  text-stroke: 1px #FFF;
+  display: block;
+}
+
+.section__title_orange {
+  color: $orange;
+}
+
+.section__title_yellow {
+  color: $yellow;
+}
+
+.section__title_green {
+  color: $green;
+}
+
+@media screen and (min-width: $tab) {
+  .l-section {
+    padding: (122px/16px)*1rem 0;
+  }
+  .section__title_sub {
+  font-size: (80px/16px)*1rem;
+  }
+}
+/*===========================
+･･･About
+=============================*/
+
+.l-about__profile {
+  padding: 20px;
+  border: 20px solid $orange;
+  height: auto;
+}
+
+.l-about__profile__img {
+
+  img {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.l-about__profile__text {
+  padding: 1rem 0 0;
+}
+
+.about__profile__name {
+  font-size: 2rem;
+  line-height: 1;
+  display: inline-block;
+}
+
+.about__profile__age {
+  display: block;
+  margin: 0 0 .7rem;
+}
+
+.l-about__message {
+  background: url(../../img/icon-cat.png) no-repeat right 250px;
+}
+
+.l-about__message__title {
+  font-size: 2rem;
+}
+
+.l-about__message__contents {
+  margin: 0 0 2rem;
+  font-size: .95rem;
+}
+
+
+// 調整用
+.l-about__message__contents:first-child .l-about__message__title {
+  margin: 1rem 0 0;
+}
+
+.profile__unit__left {
+  margin: 0 0 0 11rem;
+}
+
+@media screen and (min-width: $tab) {
+    .l-about__profile {
+    float: left;
+    width:  50%;
+  }
+
+    .l-about__message {
+    float: right;
+    width: calc(50% - 1rem);
+    background: url(../../img/icon-cat.png) no-repeat right 250px;
+  }
+}
+
+/*===========================
+･･･Career
+=============================*/
+
+.l-career {
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+
+.l-career__date {
+  float: left;
+  width: 30%;
+}
+
+.l-career__text {
+  float: right;
+  width: 70%;
+}
+
+.l-career__date,
+.l-career__text {
+  margin: 0 0 1rem;
+}
+
+
+@media screen and (min-width: $tab) {
+  .l-career {
+    width: 80%;
+  }
+}
+
+
+/*===========================
+･･･Skill
+=============================*/
+
+.skill-list__img {
+  float: left;
+  width: 20%;
+}
+
+.skill-list__contents {
+  float: left;
+  width: 70%;
+}
+
+@media screen and (min-width: $tab) {
+    .l-skill-list li {
+    width: 50%;
+    float: left;
+  }
+}
+
+.skill_list__percentage.active {
+	width: 100%;
+	background: #ccc;
+	text-align: right;
+	position: relative;
+}
+
+.skill_list__percentage.active:after {
+	content: "";
+	display: block;
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .3s ease-in-out;
+	animation: percentage 2s ease-in-out 1 forwards;
+}
+
+@keyframes percentage {
+    0% {
+	width: 0%;
+ 	background: linear-gradient(to right, #FAC671);
+    }
+    100% {
+        width: 80%;
+ 	background: linear-gradient(to right, #FAC671, #F4E862);
+    }
+}
+
+
+/*========
+･･･モジュール・ハンバーガー
+=============================*/
+.button-hamburger {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 2.5%;
+  z-index: 200;
+  width: 24px;
+  height: 24px;
+  margin: auto 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin: auto;
+  background: #333;
+}
+
+.hamburger:before, .hamburger:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  position: absolute;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.hamburger:before {
+  top: -5px;
+}
+
+.hamburger:after {
+  bottom: -5px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-hamburger {
+    display: none;
+  }
+}
+
+.is-active-drawer .hamburger {
+  background: transparent;
+}
+
+.is-active-drawer .hamburger:before, .is-active-drawer .hamburger:after {
+  top: 0;
+  background: #333;
+}
+
+.is-active-drawer .hamburger:before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.is-active-drawer .hamburger:after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
