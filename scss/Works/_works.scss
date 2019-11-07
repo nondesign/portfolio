@@ -1,0 +1,30 @@
+.l-works-img {
+  float: left;
+  width: 45%;
+}
+
+.l-works-text {
+  float: right;
+  width: 50%;
+}
+
+.l-works-text dd {
+  margin: 0 0 1rem;
+}
+
+.l-works-text__circle {
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: $orange;
+    border-radius: 50%;
+    margin: 0 1rem 0 0;
+  }
+}
+
+.l-footer {
+  clear: both;
+}

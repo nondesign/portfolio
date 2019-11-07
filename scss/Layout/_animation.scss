@@ -1,5 +1,5 @@
 /*===========================
-･･･animation
+･･･fadein
 =============================*/
 
 .fadein {
@@ -8,12 +8,8 @@
   transition: all 1s;
 }
 
-@media screen and (min-width: 768px) {
-	body {
-		font-size: 16px;
-	a {
-		font-size: 16px;
-	}
-
-	}
+#particles-js {
+	position: relative;
+  width: 100vw;
+  height: 100vh;
 }

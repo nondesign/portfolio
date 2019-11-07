@@ -40,7 +40,7 @@ clear: both;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-family: 'Staatliches', cursive;
+  font-family: 'Baloo Bhai', cursive;
 }
 
 @media screen and (min-width: $tab) {
@@ -58,6 +58,21 @@ clear: both;
   max-width: 1200px;
   width: 95%;
   margin: 0 auto;
+}
+
+/*===========================
+･･･色
+=============================*/
+.fc-green {
+  color: $green;
+}
+
+.fc-orange {
+  color: $orange;
+}
+
+.fc-yellow {
+  color: $yellow;
 }
 
 /*========
