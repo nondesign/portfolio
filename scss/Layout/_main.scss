@@ -167,6 +167,15 @@
   display: inline-block;
 }
 
+.about__profile__icon {
+  transition: .2s ease-in-out;
+
+  &:hover {
+    transition: .2s ease-in-out;
+    color: $orange;
+  }
+}
+
 .about__profile__age {
   display: block;
   margin: 0 0 .7rem;

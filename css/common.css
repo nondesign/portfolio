@@ -461,6 +461,17 @@ body a {
   display: inline-block;
 }
 
+.about__profile__icon {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.about__profile__icon:hover {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  color: #FAC671;
+}
+
 .about__profile__age {
   display: block;
   margin: 0 0 .7rem;
