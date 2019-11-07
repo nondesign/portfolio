@@ -138,19 +138,13 @@
 
 .l-career__date {
   float: left;
-  width: 30%;
+  clear: left;
 }
 
 .l-career__text {
-  float: right;
-  width: 70%;
-}
-
-.l-career__date,
-.l-career__text {
+  padding: 0 0 0 1rem;
   margin: 0 0 1rem;
 }
-
 
 @media screen and (min-width: $tab) {
   .l-career {
