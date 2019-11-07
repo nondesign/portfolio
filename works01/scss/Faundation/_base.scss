@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* ==================
+･･･Base
+========================*/
+
+body {
+	font-family: "游明朝",serif;
+	background: url(../img/bg.jpg) left top /cover;
+	color: #333;
+	line-height: 1.5;
+}
+
+/* ==================
+･･･layout
+========================*/
+
+.l-wrapper {
+	width: 1280px;
+	margin: 0 auto;
+}

@@ -1,0 +1,41 @@
+.l-header {
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+  z-index: 100;
+
+  a {
+    color: #fff;
+  }
+}
+
+.l-header__title {
+	float: left;
+	padding: 1rem 0;
+}
+
+.l-title_name {
+	display: block;
+	line-height: 1;
+  padding: .8rem 0 0;
+	font-size: 2rem;
+}
+
+.l-nav {
+	float: right;
+	margin: 60px 0 0;
+
+	 a {
+		&:hover {
+			opacity: .8;
+		}
+	}
+}
+
+.l-nav__list li {
+	float: left;
+	margin: 0 32px 0;
+}
