@@ -107,22 +107,21 @@
 
 .l-works__img {
 	width: 100%;
-	height: 200px;
-	background: #ccc;
 	margin: 0 0 1rem;
 }
 
-.l-works__category {
+.l-works__button {
+  display: block;
 	margin: .5rem 0 0 0;
 	padding: .5rem;
 	border-radius: 5px;
 	display: inline-block;
 	font-size: .875rem;
-	background: #F4E862;
-}
+  background: #F4E862;
 
-.l-works__button {
-	text-align: center;
+  &:hover {
+    opacity: .7;
+  }
 }
 
 @media screen and (min-width: $tab) {
