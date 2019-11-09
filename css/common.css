@@ -302,19 +302,6 @@ body a {
 }
 
 /*===========================
-･･･main
-=============================*/
-.l-main {
-  padding: 6.25rem 0 0;
-}
-
-@media screen and (min-width: 768px) {
-  .l-main {
-    padding: 7.25rem 0 0;
-  }
-}
-
-/*===========================
 ･･･hero
 =============================*/
 .l-hero__text {
@@ -347,32 +334,11 @@ body a {
 }
 
 .section__title_sub {
-  font-size: 4rem;
+  font-size: 3rem;
   text-shadow: 2px 2px 5px #ccc;
   -webkit-text-stroke: 1px #FFF;
   text-stroke: 1px #FFF;
   display: block;
-}
-
-.section__title_orange {
-  color: #FAC671;
-}
-
-.section__title_yellow {
-  color: #F4E862;
-}
-
-.section__title_green {
-  color: #A7CB95;
-}
-
-@media screen and (min-width: 768px) {
-  .l-section {
-    padding: 7.625rem 0;
-  }
-  .section__title_sub {
-    font-size: 5rem;
-  }
 }
 
 .l-section.-line:before, .l-section.-line:after {
@@ -397,12 +363,40 @@ body a {
   background: #333;
 }
 
+@media screen and (min-width: 768px) {
+  .l-section {
+    padding: 7.625rem 0;
+  }
+  .l-section__title {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 0 3rem;
+    letter-spacing: 5px;
+  }
+  .section__title_sub {
+    font-size: 5rem;
+  }
+}
+
 /*===========================
 ･･･works
 =============================*/
 .l-works-list li {
   text-align: center;
-  margin: 0 0 2rem;
+  margin: 0 0 3rem;
+}
+
+.l-works__contents {
+  display: block;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  margin: 0 0 1rem;
+}
+
+.l-works__contents:hover {
+  opacity: .7;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .l-works__img {
@@ -427,12 +421,14 @@ body a {
 @media screen and (min-width: 768px) {
   .l-works-list li {
     float: left;
-    text-align: center;
     width: calc((100% - 48px)/3);
     margin: 0 1.5rem 3rem 0;
   }
   .l-works-list li:nth-of-type(3n) {
     margin-right: 0;
+  }
+  .l-works__contents {
+    margin: 0 0 2rem;
   }
 }
 
@@ -441,8 +437,9 @@ body a {
 =============================*/
 .l-about__profile {
   padding: 20px;
-  border: 20px solid #FAC671;
+  border: 15px solid #FAC671;
   height: auto;
+  margin: 0 0 1rem;
 }
 
 .l-about__profile__img img {
@@ -451,11 +448,11 @@ body a {
 }
 
 .l-about__profile__text {
-  padding: 1rem 0 0;
+  margin: 1rem 0 0;
 }
 
 .about__profile__name {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1;
   display: inline-block;
 }
@@ -481,7 +478,7 @@ body a {
 }
 
 .l-about__message__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .l-about__message__contents {
@@ -489,19 +486,21 @@ body a {
   font-size: .95rem;
 }
 
-.profile__unit__left {
-  margin: 0 0 0 11rem;
-}
-
 @media screen and (min-width: 768px) {
   .l-about__profile {
     float: left;
     width: 50%;
   }
+  .about__profile__name {
+    font-size: 2rem;
+  }
   .l-about__message {
     float: right;
     width: calc(50% - 1rem);
     background: url(../../img/icon-cat.png) no-repeat right 250px;
+  }
+  .l-about__message__title {
+    font-size: 2rem;
   }
 }
 
@@ -580,28 +579,28 @@ body a {
 }
 
 .skill_list__percentage.percentage_90:after {
-  -webkit-animation: percentage_90 2s ease-in-out 1 forwards;
-          animation: percentage_90 2s ease-in-out 1 forwards;
+  -webkit-animation: percentage_90 2s ease-in-out .5s 1 forwards;
+          animation: percentage_90 2s ease-in-out .5s 1 forwards;
 }
 
 .skill_list__percentage.percentage_80:after {
-  -webkit-animation: percentage_80 2s ease-in-out 1 forwards;
-          animation: percentage_80 2s ease-in-out 1 forwards;
+  -webkit-animation: percentage_80 2s ease-in-out .5s 1 forwards;
+          animation: percentage_80 2s ease-in-out .5s 1 forwards;
 }
 
 .skill_list__percentage.percentage_70:after {
-  -webkit-animation: percentage_70 2s ease-in-out 1 forwards;
-          animation: percentage_70 2s ease-in-out 1 forwards;
+  -webkit-animation: percentage_70 2s ease-in-out .5s 1 forwards;
+          animation: percentage_70 2s ease-in-out .5s 1 forwards;
 }
 
 .skill_list__percentage.percentage_60:after {
-  -webkit-animation: percentage_60 2s ease-in-out 1 forwards;
-          animation: percentage_60 2s ease-in-out 1 forwards;
+  -webkit-animation: percentage_60 2s ease-in-out .5s 1 forwards;
+          animation: percentage_60 2s ease-in-out .5s 1 forwards;
 }
 
 .skill_list__percentage.percentage_30:after {
-  -webkit-animation: percentage_30 2s ease-in-out 1 forwards;
-          animation: percentage_30 2s ease-in-out 1 forwards;
+  -webkit-animation: percentage_30 2s ease-in-out .5s 1 forwards;
+          animation: percentage_30 2s ease-in-out .5s 1 forwards;
 }
 
 @-webkit-keyframes percentage_90 {

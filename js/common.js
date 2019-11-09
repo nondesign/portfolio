@@ -1,7 +1,7 @@
 
 $(function () {
   // 任意のズレ高さピクセル数を入力
-  var headerHeight = 122;
+  var headerHeight = 20;
   // #で始まるアンカーをクリックした場合に処理
   $('a[href^=#]').click(function () {
     // スクロールの速度
