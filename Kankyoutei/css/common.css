@@ -134,6 +134,17 @@ body {
   margin: 0 auto;
 }
 
+/*========
+･･･Accessibility
+=============================*/
+.screen-reader-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+}
+
 .l-header {
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
