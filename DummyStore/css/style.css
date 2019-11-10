@@ -106,6 +106,8 @@ input, select {
 
 img {
   vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
 }
 
 /*========
@@ -127,6 +129,12 @@ body a {
   color: #212121;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
 *[lang="en"] {
   font-family: 'Roboto Condensed', 'Arial',sans-serif;
   text-transform: uppercase;
@@ -138,17 +146,6 @@ body a {
   content: "";
   display: block;
   clear: both;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 1rem;
-  }
 }
 
 /*========

@@ -107,6 +107,8 @@ input, select {
 
 img {
   vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
 }
 
 /*========
@@ -147,6 +149,12 @@ body {
   }
 }
 
+@include mq($tab) {
+  body {
+    font-size: 1rem;
+  }
+}
+
 *[lang="en"] {
   font-family: 'Roboto Condensed', 'Arial',sans-serif;
   text-transform: uppercase;
@@ -160,16 +168,6 @@ body {
   clear: both;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-@include mq($tab) {
-  body {
-    font-size: 1rem;
-  }
-}
 /*========
 ･･･レイアウト
 =============================*/
@@ -632,8 +630,6 @@ img {
   }
 
   .l-news__text {
-    // $margin: 16px;
-    // width: percentage(181px / $tab - $margin );
     width: calc(70% - 1rem);
   }
 }
