@@ -163,7 +163,7 @@ body a {
 }
 
 .fc-yellow {
-  color: #F4E862;
+  color: #f5e431;
 }
 
 /*========
@@ -207,16 +207,6 @@ body a {
   background: #fff;
 }
 
-.l-site-title {
-  float: left;
-  padding: 1rem 0;
-}
-
-.l-site-title__sub {
-  display: block;
-  font-size: 2rem;
-}
-
 #l-nav__list {
   position: fixed;
   top: 0;
@@ -226,7 +216,7 @@ body a {
   width: 100vw;
   height: 100vh;
   font-size: 1.5rem;
-  margin: 6rem 0 0;
+  margin: 4.6rem 0 0;
   text-align: center;
   -webkit-transition: -webkit-transform .3s ease-in-out;
   transition: -webkit-transform .3s ease-in-out;
@@ -266,9 +256,6 @@ body a {
 }
 
 @media screen and (min-width: 768px) {
-  .l-site-title__sub {
-    font-size: 2.5rem;
-  }
   .l-nav {
     float: right;
     padding: 2rem 0 0;
@@ -302,16 +289,49 @@ body a {
 }
 
 /*===========================
+･･･title
+=============================*/
+.l-title {
+  float: left;
+  padding: .5rem 0;
+}
+
+.l-title a {
+  display: block;
+}
+
+.l-title_large {
+  display: block;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .l-title {
+    padding: 1rem 0;
+  }
+  .l-title_large {
+    font-size: 2.5rem;
+  }
+}
+
+/*===========================
 ･･･hero
 =============================*/
 .l-hero__text {
   position: absolute;
   top: 50%;
-  left: 15%;
+  left: 10%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 4.3vw;
+  font-size: 7vw;
+}
+
+@media screen and (min-width: 768px) {
+  .l-hero__text {
+    left: 18%;
+    font-size: 4.5vw;
+  }
 }
 
 /*===========================
@@ -327,13 +347,13 @@ body a {
 }
 
 .l-section__title {
-  font-size: 1rem;
+  font-size: .85rem;
   text-align: center;
   margin: 0 0 3rem;
   letter-spacing: 5px;
 }
 
-.section__title_sub {
+.l-section__title_large {
   font-size: 3rem;
   text-shadow: 2px 2px 5px #ccc;
   -webkit-text-stroke: 1px #FFF;
@@ -369,11 +389,9 @@ body a {
   }
   .l-section__title {
     font-size: 1rem;
-    text-align: center;
     margin: 0 0 3rem;
-    letter-spacing: 5px;
   }
-  .section__title_sub {
+  .l-section__title_large {
     font-size: 5rem;
   }
 }
@@ -411,7 +429,7 @@ body a {
   border-radius: 5px;
   display: inline-block;
   font-size: .875rem;
-  background: #F4E862;
+  background: #F5E431;
 }
 
 .l-works__button:hover {
@@ -452,7 +470,7 @@ body a {
 }
 
 .about__profile__name {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1;
   display: inline-block;
 }
@@ -478,7 +496,7 @@ body a {
 }
 
 .l-about__message__title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .l-about__message__contents {
@@ -540,6 +558,10 @@ body a {
 /*===========================
 ･･･Skill
 =============================*/
+.l-skill-list li {
+  margin: 0 0 2rem;
+}
+
 .skill-list__img {
   float: left;
   width: 20%;
@@ -611,8 +633,8 @@ body a {
   }
   100% {
     width: 90%;
-    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F4E862));
-    background: linear-gradient(to right, #FAC671, #F4E862);
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#f5e431));
+    background: linear-gradient(to right, #FAC671, #f5e431);
   }
 }
 
@@ -624,8 +646,8 @@ body a {
   }
   100% {
     width: 90%;
-    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F4E862));
-    background: linear-gradient(to right, #FAC671, #F4E862);
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#f5e431));
+    background: linear-gradient(to right, #FAC671, #f5e431);
   }
 }
 
@@ -637,8 +659,8 @@ body a {
   }
   100% {
     width: 80%;
-    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F4E862));
-    background: linear-gradient(to right, #FAC671, #F4E862);
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F5E431));
+    background: linear-gradient(to right, #FAC671, #F5E431);
   }
 }
 
@@ -650,8 +672,8 @@ body a {
   }
   100% {
     width: 80%;
-    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F4E862));
-    background: linear-gradient(to right, #FAC671, #F4E862);
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F5E431));
+    background: linear-gradient(to right, #FAC671, #F5E431);
   }
 }
 
@@ -663,8 +685,8 @@ body a {
   }
   100% {
     width: 70%;
-    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F4E862));
-    background: linear-gradient(to right, #FAC671, #F4E862);
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F5E431));
+    background: linear-gradient(to right, #FAC671, #F5E431);
   }
 }
 
@@ -676,8 +698,8 @@ body a {
   }
   100% {
     width: 70%;
-    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F4E862));
-    background: linear-gradient(to right, #FAC671, #F4E862);
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F5E431));
+    background: linear-gradient(to right, #FAC671, #F5E431);
   }
 }
 
@@ -689,8 +711,8 @@ body a {
   }
   100% {
     width: 60%;
-    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F4E862));
-    background: linear-gradient(to right, #FAC671, #F4E862);
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F5E431));
+    background: linear-gradient(to right, #FAC671, #F5E431);
   }
 }
 
@@ -702,8 +724,8 @@ body a {
   }
   100% {
     width: 60%;
-    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F4E862));
-    background: linear-gradient(to right, #FAC671, #F4E862);
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F5E431));
+    background: linear-gradient(to right, #FAC671, #F5E431);
   }
 }
 
@@ -715,8 +737,8 @@ body a {
   }
   100% {
     width: 30%;
-    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F4E862));
-    background: linear-gradient(to right, #FAC671, #F4E862);
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F5E431));
+    background: linear-gradient(to right, #FAC671, #F5E431);
   }
 }
 
@@ -728,8 +750,8 @@ body a {
   }
   100% {
     width: 30%;
-    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F4E862));
-    background: linear-gradient(to right, #FAC671, #F4E862);
+    background: -webkit-gradient(linear, left top, right top, from(#FAC671), to(#F5E431));
+    background: linear-gradient(to right, #FAC671, #F5E431);
   }
 }
 

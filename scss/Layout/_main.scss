@@ -1,12 +1,46 @@
 /*===========================
+･･･title
+=============================*/
+.l-title {
+  float: left;
+  padding: .5rem 0;
+
+  a {
+    display: block;
+  }
+}
+
+.l-title_large {
+  display: block;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: $tab) {
+  .l-title {
+    padding: 1rem 0;
+  }
+
+  .l-title_large {
+    font-size: 2.5rem;
+  }
+}
+
+/*===========================
 ･･･hero
 =============================*/
 .l-hero__text {
   position: absolute;
   top: 50%;
-  left: 15%;
+  left: 10%;
   transform: translateY(-50%);
-  font-size: 4.3vw;
+  font-size: 7vw;
+}
+
+@media screen and (min-width: $tab) {
+  .l-hero__text {
+    left: 18%;
+    font-size: 4.5vw;
+  }
 }
 
 /*===========================
@@ -23,13 +57,13 @@
 }
 
 .l-section__title {
-  font-size: 1rem;
+  font-size: .85rem;
   text-align: center;
   margin: 0 0 (48px/16px)*1rem;
   letter-spacing: 5px;
 }
 
-.section__title_sub {
+.l-section__title_large {
   font-size: (48px/16px)*1rem;
   text-shadow: 2px 2px 5px #ccc;
   -webkit-text-stroke: 1px #FFF;
@@ -71,11 +105,10 @@
 
   .l-section__title {
     font-size: 1rem;
-    text-align: center;
     margin: 0 0 (48px/16px)*1rem;
-    letter-spacing: 5px;
   }
-  .section__title_sub {
+
+  .l-section__title_large {
   font-size: (80px/16px)*1rem;
   }
 }
@@ -111,7 +144,7 @@
 	border-radius: 5px;
 	display: inline-block;
 	font-size: .875rem;
-  background: #F4E862;
+  background: #F5E431;
 
   &:hover {
     opacity: .7;
@@ -158,7 +191,7 @@
 }
 
 .about__profile__name {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1;
   display: inline-block;
 }
@@ -182,7 +215,7 @@
 }
 
 .l-about__message__title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .l-about__message__contents {
@@ -191,23 +224,25 @@
 }
 
 @media screen and (min-width: $tab) {
-    .l-about__profile {
+
+  .l-about__profile {
     float: left;
     width:  50%;
   }
 
-    .about__profile__name {
+  .about__profile__name {
     font-size: 2rem;
-    }
+  }
 
-    .l-about__message {
+  .l-about__message {
     float: right;
     width: calc(50% - 1rem);
     background: url(../../img/icon-cat.png) no-repeat right 250px;
   }
-    .l-about__message__title {
+
+  .l-about__message__title {
     font-size: 2rem;
-    }
+  }
 }
 
 /*===========================
@@ -249,6 +284,9 @@
 /*===========================
 ･･･Skill
 =============================*/
+.l-skill-list li {
+  margin: 0 0 2rem;
+}
 
 .skill-list__img {
   float: left;
@@ -261,7 +299,7 @@
 }
 
 @media screen and (min-width: $tab) {
-    .l-skill-list li {
+  .l-skill-list li {
     width: 50%;
     float: left;
   }
@@ -310,7 +348,7 @@
     }
     100% {
   width: 90%;
- 	background: linear-gradient(to right, #FAC671, #F4E862);
+ 	background: linear-gradient(to right, #FAC671, #f5e431);
     }
 }
 
@@ -321,7 +359,7 @@
     }
     100% {
   width: 80%;
- 	background: linear-gradient(to right, #FAC671, #F4E862);
+ 	background: linear-gradient(to right, #FAC671, #F5E431);
     }
 }
 @keyframes percentage_70 {
@@ -331,7 +369,7 @@
     }
     100% {
   width: 70%;
- 	background: linear-gradient(to right, #FAC671, #F4E862);
+ 	background: linear-gradient(to right, #FAC671, #F5E431);
     }
 }
 @keyframes percentage_60 {
@@ -341,7 +379,7 @@
     }
     100% {
   width: 60%;
- 	background: linear-gradient(to right, #FAC671, #F4E862);
+ 	background: linear-gradient(to right, #FAC671, #F5E431);
     }
 }
 @keyframes percentage_30 {
@@ -351,7 +389,7 @@
     }
     100% {
   width: 30%;
- 	background: linear-gradient(to right, #FAC671, #F4E862);
+ 	background: linear-gradient(to right, #FAC671, #F5E431);
     }
 }
 
