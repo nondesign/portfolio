@@ -12,47 +12,50 @@
 <body>
   <header class="l-header">
     <div class="l-wrapper clr">
-      <h1 class="l-site-title" lang="en"><a href="index.html">Saki Nomura's <span class="l-site-title__sub">Portfolio</span></a></h1>
-      <nav class="l-nav">
-        <h2 class="screen-reader-text">サイト内メニュー</h2>
-        <button type="button" class="js-button-hamburger button-hamburger" aria-controls="l-nav__list" aria-expanded="false">
-          <span class="hamburger">
-            <span class="screen-reader-text">メニューを開閉する</span>
-          </span>
-        </button>
-        <ul id="l-nav__list" class="clr" lang="en">
-          <li><a href="#"><span class="fc-green">h</span>ome</a></li>
-          <li><a href="#works"><span class="fc-orange">w</span>orks</a></li>
-          <li><a href="#about"><span class="fc-yellow">a</span>bout</a></li>
-        </ul>
-      </nav>
+      <div class="l-header-inner">
+        <h1 class="l-title" lang="en"><a href="index.html"><span class="fc-orange">S</span>aki <span class="fc-yellow">N</span>omura's <span class="l-title_large"><span class="fc-green">P</span>ort<span class="fc-orange">f</span>olio</span></a></h1>
+        <nav class="l-nav">
+          <h2 class="screen-reader-text">サイト内メニュー</h2>
+          <button type="button" class="js-button-hamburger button-hamburger" aria-controls="l-nav__list" aria-expanded="false">
+            <span class="hamburger">
+              <span class="screen-reader-text">メニューを開閉する</span>
+            </span>
+          </button>
+          <ul id="l-nav__list" class="clr" lang="en">
+            <li><a href="index.html"><span class="fc-green">h</span>ome</a></li>
+            <li><a href="index.html#about"><span class="fc-yellow">a</span>bout</a></li>
+            <li><a href="index.html#works"><span class="fc-orange">w</span>orks</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
+
   <main class="l-main">
-    <section class="l-section fadein" id="works">
+    <section class="l-section" id="works">
       <div class="l-wrapper">
-        <h2 class="l-section__title"><span class="section__title_sub" lang="en"><span class="section__title_orange ">W</span>orks</span>制作物</h2>
-        <figure class="l-works-img"><img src="img/works-01.png" alt=""></figure>
-        <div class="l-works-text">
-          <dl>
-            <dt class="l-works-text__circle">サイト名</dt>
+        <h2 class="l-section__title"><span class="l-section__title_large" lang="en"><span class="fc-orange">W</span>orks</span>制作物</h2>
+        <div class="l-overview">
+          <figure class="l-overview__img"><img src="img/works-01.png" alt=""></figure>
+          <dl class="l-overview__text">
+            <dt class="l-overview__text__circle">サイト名</dt>
             <dd>奥飛騨温泉郷　新穂高温泉　寛鏡亭</dd>
-            <dt class="l-works-text__circle">目的・ゴール</dt>
+            <dt class="l-overview__text__circle">目的・ゴール</dt>
             <dd>新しいお客様層を取り込み予約してもらう（集客のためのイベント迄企画）</dd>
-            <dt class="l-works-text__circle">ターゲット層</dt>
+            <dt class="l-overview__text__circle">ターゲット層</dt>
             <dd>20代～30代の女性</dd>
-            <dt class="l-works-text__circle">制作ポイント</dt>
+            <dt class="l-overview__text__circle">制作ポイント</dt>
             <dd>奥飛騨温泉郷　新穂高温泉　寛鏡亭</dd>
-            <dt class="l-works-text__circle">コーディングで気を付けたこと</dt>
+            <dt class="l-overview__text__circle">コーディングで気を付けたこと</dt>
             <dd>奥飛騨温泉郷　新穂高温泉　寛鏡亭</dd>
-            <dt class="l-works-text__circle">担当範囲</dt>
+            <dt class="l-overview__text__circle">担当範囲</dt>
             <dd>
               <ul>
                 <li>デザイン - XD</li>
                 <li>コーディング - HTML ・CSS</li>
               </ul>
             </dd>
-            <dt class="l-works-text__circle">制作時間</dt>
+            <dt class="l-overview__text__circle">制作時間</dt>
             <dd>
               <ul>
                 <li>イベント企画・デザイン - 約３日</li>
@@ -61,24 +64,28 @@
             </dd>
           </dl>
         </div>
+
       </div>
     </section>
-
   </main>
+
   <footer class="l-footer">
     <div class="l-wrapper">
-      <p class="l-footer__title" lang="en"><a href="#">Saki Nomura's <span class="l-site-title__sub">Portfolio</span></a></p>
-      <ul class="l-footer__nav clr" lang="en">
-        <li><a href="#"><span class="fc-green">h</span>ome</a></li>
-        <li><a href="#works"><span class="fc-orange">w</span>orks</a></li>
-        <li><a href="#about"><span class="fc-yellow">a</span>bout</a></li>
-      </ul>
+      <div class="l-footer-inner">
+        <p class="l-footer__title" lang="en"><a href="#"><span class="fc-orange">S</span>aki <span class="fc-yellow">N</span>omura's <span class="l-title_large"><span class="fc-green">P</span>ort<span class="fc-orange">f</span>olio</span></a></p>
+        <ul class="l-footer__nav clr" lang="en">
+          <li><a href="#"><span class="fc-green">h</span>ome</a></li>
+          <li><a href="#about"><span class="fc-yellow">a</span>bout</a></li>
+          <li><a href="#works"><span class="fc-orange">w</span>orks</a></li>
+        </ul>
+      </div>
       <p class="l-footer__copyright"><small>&copy; saki nomura All rights reserved.</small></p>
     </div>
   </footer>
 
   <!-- jQuery.jsの読み込み -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

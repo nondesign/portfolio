@@ -1,19 +1,21 @@
-.l-works-img {
-  float: left;
+.l-overview {
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-overview__img {
   width: 45%;
 }
 
-.l-works-text {
-  float: right;
+.l-overview__text {
   width: 50%;
+
+  dd {
+    margin: 0 0 1rem;
+  }
 }
 
-.l-works-text dd {
-  margin: 0 0 1rem;
-}
-
-.l-works-text__circle {
-
+.l-overview__text__circle {
   &:before {
     content: "";
     display: inline-block;
@@ -23,8 +25,4 @@
     border-radius: 50%;
     margin: 0 1rem 0 0;
   }
-}
-
-.l-footer {
-  clear: both;
 }
