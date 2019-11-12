@@ -207,6 +207,15 @@ body a {
   background: #fff;
 }
 
+.l-header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 #l-nav__list {
   position: fixed;
   top: 0;
@@ -257,7 +266,6 @@ body a {
 
 @media screen and (min-width: 768px) {
   .l-nav {
-    float: right;
     padding: 2rem 0 0;
   }
   #l-nav__list {
@@ -268,15 +276,12 @@ body a {
     width: auto;
     height: auto;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #l-nav__list:before {
     content: none;
-  }
-  #l-nav__list li {
-    float: left;
-  }
-  #l-nav__list li + li {
-    margin: 0 0 0 4.5rem;
   }
   #l-nav__list a {
     display: block;
@@ -286,13 +291,15 @@ body a {
     transition: .2s ease-in-out;
     font-size: 1.25rem;
   }
+  #l-nav__list li + li {
+    margin: 0 0 0 4.5rem;
+  }
 }
 
 /*===========================
 ･･･title
 =============================*/
 .l-title {
-  float: left;
   padding: .5rem 0;
 }
 
@@ -437,13 +444,17 @@ body a {
 }
 
 @media screen and (min-width: 768px) {
-  .l-works-list li {
-    float: left;
-    width: calc((100% - 48px)/3);
-    margin: 0 1.5rem 3rem 0;
+  .l-works-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .l-works-list li:nth-of-type(3n) {
-    margin-right: 0;
+  .l-works-list li {
+    width: calc((100% - 48px)/3);
+    margin: 0 0 3rem;
   }
   .l-works__contents {
     margin: 0 0 2rem;
@@ -505,15 +516,21 @@ body a {
 }
 
 @media screen and (min-width: 768px) {
+  .l-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .l-about__profile {
-    float: left;
     width: 50%;
   }
   .about__profile__name {
     font-size: 2rem;
   }
   .l-about__message {
-    float: right;
     width: calc(50% - 1rem);
     background: url(../../img/icon-cat.png) no-repeat right 250px;
   }
@@ -523,59 +540,33 @@ body a {
 }
 
 /*===========================
-･･･Career
-=============================*/
-.l-career {
-  width: 100%;
-  margin: 0 auto 2rem;
-}
-
-.l-career__date {
-  float: left;
-  clear: left;
-}
-
-.l-career__text {
-  padding: 0 0 0 6rem;
-  margin: 0 0 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .l-career {
-    width: 80%;
-  }
-  .l-career__text {
-    padding: 0 0 0 8rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .l-career__text {
-    padding: 0 0 0 15rem;
-  }
-}
-
-/*===========================
 ･･･Skill
 =============================*/
 .l-skill-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 0 2rem;
 }
 
-.skill-list__img {
-  float: left;
+.skill-list__title {
   width: 20%;
 }
 
 .skill-list__contents {
-  float: left;
   width: 70%;
 }
 
 @media screen and (min-width: 768px) {
+  .l-skill-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .l-skill-list li {
     width: 50%;
-    float: left;
   }
 }
 
@@ -590,7 +581,7 @@ body a {
 .skill_list__percentage:after {
   content: "";
   display: block;
-  width: 0%;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -601,28 +592,28 @@ body a {
 }
 
 .skill_list__percentage.percentage_90:after {
-  -webkit-animation: percentage_90 2s ease-in-out .5s 1 forwards;
-          animation: percentage_90 2s ease-in-out .5s 1 forwards;
+  -webkit-animation: percentage_90 2s ease-in-out  1 forwards;
+          animation: percentage_90 2s ease-in-out  1 forwards;
 }
 
 .skill_list__percentage.percentage_80:after {
-  -webkit-animation: percentage_80 2s ease-in-out .5s 1 forwards;
-          animation: percentage_80 2s ease-in-out .5s 1 forwards;
+  -webkit-animation: percentage_80 2s ease-in-out  1 forwards;
+          animation: percentage_80 2s ease-in-out  1 forwards;
 }
 
 .skill_list__percentage.percentage_70:after {
-  -webkit-animation: percentage_70 2s ease-in-out .5s 1 forwards;
-          animation: percentage_70 2s ease-in-out .5s 1 forwards;
+  -webkit-animation: percentage_70 2s ease-in-out  1 forwards;
+          animation: percentage_70 2s ease-in-out  1 forwards;
 }
 
 .skill_list__percentage.percentage_60:after {
-  -webkit-animation: percentage_60 2s ease-in-out .5s 1 forwards;
-          animation: percentage_60 2s ease-in-out .5s 1 forwards;
+  -webkit-animation: percentage_60 2s ease-in-out  1 forwards;
+          animation: percentage_60 2s ease-in-out  1 forwards;
 }
 
 .skill_list__percentage.percentage_30:after {
-  -webkit-animation: percentage_30 2s ease-in-out .5s 1 forwards;
-          animation: percentage_30 2s ease-in-out .5s 1 forwards;
+  -webkit-animation: percentage_30 2s ease-in-out  1 forwards;
+          animation: percentage_30 2s ease-in-out  1 forwards;
 }
 
 @-webkit-keyframes percentage_90 {
@@ -858,11 +849,10 @@ body a {
 }
 
 .l-footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 0 2rem;
-}
-
-.l-footer__nav li {
-  float: left;
 }
 
 .l-footer__nav li + li {
@@ -874,12 +864,16 @@ body a {
 }
 
 @media screen and (min-width: 768px) {
-  .l-footer__title {
-    float: left;
+  .l-footer-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .l-footer__nav {
     margin: 2rem 0 0;
-    float: right;
   }
   .l-footer__copyright {
     clear: both;

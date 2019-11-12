@@ -12,20 +12,22 @@
 <body>
   <header class="l-header">
     <div class="l-wrapper clr">
-      <h1 class="l-title" lang="en"><a href="#"><span class="fc-orange">S</span>aki <span class="fc-yellow">N</span>omura's <span class="l-title_large"><span class="fc-green">P</span>ort<span class="fc-orange">f</span>olio</span></a></h1>
-      <nav class="l-nav">
-        <h2 class="screen-reader-text">サイト内メニュー</h2>
-        <button type="button" class="js-button-hamburger button-hamburger" aria-controls="l-nav__list" aria-expanded="false">
-          <span class="hamburger">
-            <span class="screen-reader-text">メニューを開閉する</span>
-          </span>
-        </button>
-        <ul id="l-nav__list" class="clr" lang="en">
-          <li><a href="#"><span class="fc-green">h</span>ome</a></li>
-          <li><a href="#works"><span class="fc-orange">w</span>orks</a></li>
-          <li><a href="#about"><span class="fc-yellow">a</span>bout</a></li>
-        </ul>
-      </nav>
+      <div class="l-header-inner">
+        <h1 class="l-title" lang="en"><a href="#"><span class="fc-orange">S</span>aki <span class="fc-yellow">N</span>omura's <span class="l-title_large"><span class="fc-green">P</span>ort<span class="fc-orange">f</span>olio</span></a></h1>
+        <nav class="l-nav">
+          <h2 class="screen-reader-text">サイト内メニュー</h2>
+          <button type="button" class="js-button-hamburger button-hamburger" aria-controls="l-nav__list" aria-expanded="false">
+            <span class="hamburger">
+              <span class="screen-reader-text">メニューを開閉する</span>
+            </span>
+          </button>
+          <ul id="l-nav__list" class="clr" lang="en">
+            <li><a href="#"><span class="fc-green">h</span>ome</a></li>
+            <li><a href="#about"><span class="fc-yellow">a</span>bout</a></li>
+            <li><a href="#works"><span class="fc-orange">w</span>orks</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main class="l-main">
@@ -34,10 +36,112 @@
       <p class="l-hero__text" lang="en"><span class="fc-orange">S</span>aki <span class="fc-yellow">N</span>omura's<br><span class="fc-green">P</span>ort<span class="fc-orange">f</span>olio</p>
     </div>
 
-    <section class="l-section fadein" id="works">
+
+    <section class="l-section fadein" id="about">
+      <div class="l-wrapper clr">
+        <h2 class="l-section__title"><span class="l-section__title_large" lang="en"><span class="fc-yellow">A</span>bout</span>私について</h2>
+
+        <div class="l-about fadein">
+          <section class="l-about__profile">
+            <figure class="l-about__profile__img"><img src="img/about-profile.jpg" alt="野村紗希の本人画像"></figure>
+            <div class="l-about__profile__text">
+              <h3 class="about__profile__name" lang="en">Saki Nomura</h3> <a href="https://twitter.com/_nondesign" target="_blank"><i class="fab fa-twitter fa-2x about__profile__icon"></i></a> <a href="https://github.com/nondesign" target="_blank"><i class="fab fa-github fa-2x about__profile__icon"></i></a>
+              <span class="about__profile__age"><time datetime="1996-07-02">1996.07.02</time> 23歳</span>
+              <ul class="about__profile__info">
+                <li>好き：猫　音楽（特に邦ロック）　ビール</li>
+                <li>趣味：カラオケ　ライブ　ゲーム</li>
+                <li>興味・関心があるもの：CSSアニメーション　修正しやすいWeb設計</li>
+              </ul>
+            </div>
+          </section>
+
+          <div class="l-about__message">
+            <section class="l-about__message__contents">
+              <h3 class="l-about__message__title" lang="en">Comment</h3>
+              <p>ゼロからイチを造りあげ形にできるコーディングに魅力を感じ、日々勉強中です。好奇心旺盛で、色々な事に興味を持つことができ、楽しみながら物事に取り組むことができます。</p>
+              <p>WEBサイトを構築・設計する目的に沿って最適な技術の実装やマークアップをする事ができるよう日々のインプット・アウトプットを大事にしたいと考えています。</p>
+            </section>
+            <section class=" l-about__message__contents">
+              <h3 class="l-about__message__title" lang="en">Mind</h3>
+              <ul>
+                <li>セマンティックなマークアップを意識してコーディングすること</li>
+                <li>予測、保守、再利用、拡張しやすいCSSの設計を考えること</li>
+              </ul>
+            </section>
+            <section class="l-about__message__contents">
+              <h3 class="l-about__message__title" lang="en" ++>Vision</h3>
+              <ul>
+                <li>WEBの制作会社に入り実務経験を積み、日々知識を得てスキルアップ</li>
+                <li>JavaScript、JQuery、PHP等　幅広い範囲の理解を深め実装する事のできるフロントエンドエンジニアへ</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="l-section -line fadein">
+      <div class="l-wrapper">
+        <h2 class="l-section__title"><span class="l-section__title_large" lang="en"><span class="fc-orange">S</span>kill</span>スキル</h2>
+        <ul class="l-skill-list">
+          <li>
+            <p class="skill-list__title">HTML</p>
+            <div class="skill-list__contents">
+              <p class="skill_list__percentage percentage_90 fadein">90%</p>
+              <p>SEO対策の為にもセマンティックなマークアップ、アクセシビリティに対応する事を心掛けています。</p>
+            </div>
+          </li>
+          <li>
+            <p class="skill-list__title">CSS</p>
+            <div class="skill-list__contents">
+              <p class="skill_list__percentage percentage_80 fadein">80%</p>
+              <p>CSS設計はとても重要だと考えており、再利用・修正しやすいCSSを記述する事を意識しています。</p>
+            </div>
+          </li>
+          <li>
+            <p class="skill-list__title">SASS</p>
+            <div class="skill-list__contents">
+              <p class="skill_list__percentage percentage_70 fadein">70%</p>
+              <p>変数を使い、効率よく記述できるよう勉強中です。</p>
+            </div>
+          </li>
+          <li>
+            <p class="skill-list__title">JavaScript</p>
+            <div class="skill-list__contents">
+              <p class="skill_list__percentage percentage_30 fadein">30%</p>
+              <p>簡単な関数を理解する事ができます。</p>
+            </div>
+          </li>
+          <li>
+            <p class="skill-list__title">JQuery</p>
+            <div class="skill-list__contents">
+              <p class="skill_list__percentage percentage_60 fadein">60%</p>
+              <p>自ら調べながら実装することができます。</p>
+            </div>
+          </li>
+          <li>
+            <p class="skill-list__title">XD</p>
+            <div class="skill-list__contents">
+              <p class="skill_list__percentage percentage_80 fadein">80%</p>
+              <p>ワイヤーフレーム、デザインカンプの作成ができます。</p>
+            </div>
+          </li>
+          <li>
+            <p class="skill-list__title">Photoshop</p>
+            <div class="skill-list__contents">
+              <p class="skill_list__percentage percentage_80 fadein">80%</p>
+              <p>ワイヤーフレーム、デザインカンプの作成、簡単な画像加工ができます。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="l-section -line fadein" id="works">
       <div class="l-wrapper">
         <h2 class="l-section__title"><span class="l-section__title_large" lang="en"><span class="fc-orange ">W</span>orks</span>制作物</h2>
-        <ul class="l-works-list clr">
+        <ul class="l-works-list">
           <li>
             <a class="l-works__contents" href="DummyStore/index.html" target="_blank">
               <figure class="l-works__img"><img src="img/works01.png" alt="架空ショッピングサイト"></figure>
@@ -62,134 +166,18 @@
         </ul>
       </div>
     </section>
-
-    <section class="l-section -line fadein" id="about">
-      <div class="l-wrapper clr">
-        <h2 class="l-section__title"><span class="l-section__title_large" lang="en"><span class="fc-yellow">A</span>bout</span>私について</h2>
-
-        <section class="l-about__profile fadein">
-          <figure class="l-about__profile__img"><img src="img/about-profile.jpg" alt="野村紗希の本人画像"></figure>
-          <div class="l-about__profile__text">
-            <h3 class="about__profile__name" lang="en">Saki Nomura</h3> <a href="https://twitter.com/_nondesign" target="_blank"><i class="fab fa-twitter fa-2x about__profile__icon"></i></a> <a href="https://github.com/nondesign" target="_blank"><i class="fab fa-github fa-2x about__profile__icon"></i></a>
-            <span class="about__profile__age"><time datetime="1996-07-02">1996.07.02</time> 23歳</span>
-            <ul class="about__profile__info">
-              <li>好き：猫　音楽（特に邦ロック）　ビール</li>
-              <li>趣味：カラオケ　ライブ　ゲーム</li>
-              <li>興味・関心があるもの：CSSアニメーション　修正しやすいWeb設計</li>
-            </ul>
-          </div>
-        </section>
-
-        <div class="l-about__message fadein">
-          <div class="l-about__message__contents">
-            <h3 class="l-about__message__title" lang="en">Comment</h3>
-            <p>ゼロからイチを造りあげ形にできるコーディングに魅力を感じ、日々勉強中です。好奇心旺盛で、色々な事に興味を持つことができ、楽しみながら物事に取り組むことができます。</p>
-            <p>WEBサイトを構築・設計する目的に沿って最適な技術の実装やマークアップをする事ができるよう日々のインプット・アウトプットを大事にしたいと考えています。</p>
-          </div>
-          <div class=" l-about__message__contents">
-            <h3 class="l-about__message__title" lang="en">Mind</h3>
-            <ul>
-              <li>セマンティックなマークアップを意識してコーディングすること</li>
-              <li>予測、保守、再利用、拡張しやすいCSSの設計を考えること</li>
-            </ul>
-          </div>
-          <div class="l-about__message__contents">
-            <h3 class="l-about__message__title" lang="en" ++>Vision</h3>
-            <ul>
-              <li>WEBの制作会社に入り実務経験を積み、日々知識を得てスキルアップ</li>
-              <li>JavaScript、JQuery、PHP等　幅広い範囲の理解を深め実装する事のできるフロントエンドエンジニアへ</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="l-section -line fadein">
-      <div class="l-wrapper">
-        <h2 class="l-section__title"><span class="l-section__title_large" lang="en"><span class="fc-green">C</span>areer</span>経歴</h2>
-        <dl class="l-career clr fadein">
-          <dt class="l-career__date"><time datetime="2015-04">2015年4月</time></dt>
-          <dd class="l-career__text">商業高校で取得した簿記の資格を活かすため、営業事務に就職</dd>
-          <dt class="l-career__date"><time datetime="2018-11">2018年11月</time></dt>
-          <dd class="l-career__text">３年８ヶ月務めた営業事務を退職</dd>
-          <dt class="l-career__date"><time datetime="2019-04">2019年4月</time></dt>
-          <dd class="l-career__text">独学でWebの勉強を開始</dd>
-          <dt class="l-career__date"><time datetime="2019-07">2019年7月</time></dt>
-          <dd class="l-career__text">求職者支援訓練　Webデザイナー科　入校</dd>
-          <dt class="l-career__date"><time datetime="2019-12">2019年12月</time></dt>
-          <dd class="l-career__text">求職者支援訓練　Webデザイナー科　卒業予定</dd>
-          <dt class="l-career__date"><time datetime="2020-1">2020年1月～</time></dt>
-          <dd class="l-career__text">Web制作会社でコーダーとして働く目標を掲げ転職活動中</dd>
-        </dl>
-      </div>
-    </section>
-
-
-    <section class="l-section -line fadein">
-      <div class="l-wrapper">
-        <h2 class="l-section__title"><span class="l-section__title_large" lang="en"><span class="fc-orange">S</span>kill</span>スキル</h2>
-        <ul class="l-skill-list clr">
-          <li class="clr">
-            <figure class="skill-list__img">HTML</figure>
-            <div class="skill-list__contents">
-              <p class="skill_list__percentage percentage_90 fadein">90%</p>
-              <p>SEO対策の為にもセマンティックなマークアップ、アクセシビリティに対応する事を心掛けています。</p>
-            </div>
-          </li>
-          <li class="clr">
-            <figure class="skill-list__img">CSS</figure>
-            <div class="skill-list__contents">
-              <p class="skill_list__percentage percentage_80 fadein">80%</p>
-              <p>CSS設計はとても重要だと考えており、再利用・修正しやすいCSSを記述する事を意識しています。</p>
-            </div>
-          </li>
-          <li class="clr">
-            <figure class="skill-list__img">SASS</figure>
-            <div class="skill-list__contents">
-              <p class="skill_list__percentage percentage_70 fadein">70%</p>
-              <p>変数を使い、効率よく記述できるよう勉強中です。</p>
-            </div>
-          </li>
-          <li class="clr">
-            <figure class="skill-list__img">JavaScript</figure>
-            <div class="skill-list__contents">
-              <p class="skill_list__percentage percentage_30 fadein">30%</p>
-              <p>簡単な関数を理解する事ができます。</p>
-            </div>
-          </li>
-          <li class="clr">
-            <figure class="skill-list__img">JQuery</figure>
-            <div class="skill-list__contents">
-              <p class="skill_list__percentage percentage_60 fadein">60%</p>
-              <p>自ら調べながら実装することができます。</p>
-            </div>
-          </li>
-          <li class="clr">
-            <figure class="skill-list__img">XD</figure>
-            <div class="skill-list__contents">
-              <p class="skill_list__percentage percentage_80 fadein">80%</p>
-              <p>ワイヤーフレーム、デザインカンプの作成ができます。</p>
-            </div>
-          </li>
-          <li class="clr">
-            <figure class="skill-list__img">Photoshop</figure>
-            <div class="skill-list__contents">
-              <p class="skill_list__percentage percentage_80 fadein">80%</p>
-              <p>ワイヤーフレーム、デザインカンプの作成、簡単な画像加工ができます。</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
   </main>
+
   <footer class="l-footer">
     <div class="l-wrapper">
-      <p class="l-footer__title" lang="en"><a href="#"><span class="fc-orange">S</span>aki <span class="fc-yellow">N</span>omura's <span class="l-title_large"><span class="fc-green">P</span>ort<span class="fc-orange">f</span>olio</span></a></p>
-      <ul class="l-footer__nav clr" lang="en">
-        <li><a href="#"><span class="fc-green">h</span>ome</a></li>
-        <li><a href="#works"><span class="fc-orange">w</span>orks</a></li>
-        <li><a href="#about"><span class="fc-yellow">a</span>bout</a></li>
-      </ul>
+      <div class="l-footer-inner">
+        <p class="l-footer__title" lang="en"><a href="#"><span class="fc-orange">S</span>aki <span class="fc-yellow">N</span>omura's <span class="l-title_large"><span class="fc-green">P</span>ort<span class="fc-orange">f</span>olio</span></a></p>
+        <ul class="l-footer__nav clr" lang="en">
+          <li><a href="#"><span class="fc-green">h</span>ome</a></li>
+          <li><a href="#about"><span class="fc-yellow">a</span>bout</a></li>
+          <li><a href="#works"><span class="fc-orange">w</span>orks</a></li>
+        </ul>
+      </div>
       <p class="l-footer__copyright"><small>&copy; saki nomura All rights reserved.</small></p>
     </div>
   </footer>

@@ -11,6 +11,11 @@
 	background: #fff;
 }
 
+.l-header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
 #l-nav__list {
   position: fixed;
   top: 0;
@@ -61,7 +66,6 @@
 
  @media screen and (min-width: 768px) {
   .l-nav {
-    float: right;
     padding: 2rem 0 0;
   }
 
@@ -73,25 +77,22 @@
     width: auto;
     height: auto;
     margin: 0;
+    display: flex;
 
     &:before {
       content: none;
-   }
-  }
-
-  #l-nav__list li {
-    float: left;
-
-    + li {
-      margin: 0 0 0 (72px/16px)*1rem;
     }
-  }
 
-  #l-nav__list a {
+    a {
     display: block;
     color: #333;
     border-bottom: 5px solid transparent;
     transition: .2s ease-in-out;
     font-size: (20px/16px)*1rem;
   }
+}
+
+  #l-nav__list li + li {
+      margin: 0 0 0 (72px/16px)*1rem;
+    }
 }

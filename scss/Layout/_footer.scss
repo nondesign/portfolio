@@ -20,15 +20,12 @@
 }
 
 .l-footer__nav {
+  display: flex;
   margin: 0 0 2rem;
 }
 
-.l-footer__nav li {
-  float: left;
-
-   + li {
+.l-footer__nav li + li {
     margin: 0 0 0 1rem;
-   }
 }
 
 .l-footer__copyright {
@@ -36,14 +33,13 @@
 }
 
 @media screen and (min-width: $tab) {
-
-  .l-footer__title {
-    float: left;
+  .l-footer-inner {
+    display: flex;
+    justify-content: space-between;
   }
 
   .l-footer__nav {
     margin: 2rem 0 0;
-    float: right;
   }
 
   .l-footer__copyright {
