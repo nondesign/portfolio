@@ -1,0 +1,55 @@
+//  変数の定義
+
+$sp: 320px;
+$tab: 768px;
+$desk: 1024px;
+
+@mixin mq($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+/*==========================
+･･･Base
+=============================*/
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: "游明朝",serif;
+	background: url(../img/bg.jpg) left top /cover;
+	color: #333;
+  font-size: .875rem;
+  line-height: 1.5;
+
+  a {
+    color: #333;
+  }
+}
+
+@media screen and (min-width: $tab) {
+	body {
+		font-size: 1rem;
+	}
+}
+
+.clr:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*========
+･･･Accessibility
+=============================*/
+
+.screen-reader-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+}
