@@ -339,8 +339,10 @@
 	display: inline-block;
 	font-size: .875rem;
   background: #F5E431;
+}
 
-  &:[href]:hover {
+.l-works__button[href] {
+  &:hover {
     opacity: .7;
   }
 }

@@ -1,15 +1,8 @@
-.l-overview {
-  display: flex;
-  justify-content: space-between;
-}
-
-.l-overview__img {
-  width: 45%;
-}
+  .l-overview__img {
+    margin: 0 0 2rem;
+  }
 
 .l-overview__text {
-  width: 50%;
-
   dd {
     margin: 0 0 1rem;
     padding: 0 0 0 1.8rem;
@@ -25,5 +18,21 @@
     background: $orange;
     border-radius: 50%;
     margin: 0 1rem 0 0;
+  }
+}
+
+@media screen and (min-width: $tab) {
+  .l-overview {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .l-overview__img {
+  width: 45%;
+  margin: 0;
+  }
+
+.l-overview__text {
+  width: 50%;
   }
 }
