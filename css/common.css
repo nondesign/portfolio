@@ -714,6 +714,21 @@ body a {
   margin: 0 0 1rem;
 }
 
+.l-works__title {
+  position: relative;
+}
+
+.l-works__title:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-family: 'Font Awesome 5 Free';
+  content: "\f35d";
+  color: #333;
+  font-weight: 900;
+}
+
 .l-works__button {
   display: block;
   margin: .5rem 0 0 0;
@@ -722,10 +737,6 @@ body a {
   display: inline-block;
   font-size: .875rem;
   background: #F5E431;
-}
-
-.l-works__button[href]:hover {
-  opacity: .7;
 }
 
 @media screen and (min-width: 768px) {
