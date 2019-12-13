@@ -1,0 +1,173 @@
+﻿@charset "utf-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*========================================
+…wrapper
+=========================================*/
+
+body {
+	font-family: 'Sawarabi Mincho', serif;
+}
+
+#bg {	
+	height: 100vh;
+	background: url(../img/bg.jpg) no-repeat top left/cover;
+}
+
+#wrapper {
+	width: 300px;
+	padding: 5rem 0 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title {
+	margin: 0 0 2rem;
+}
+
+.title span {
+	display: block;
+	font-size: 2rem;
+	margin: .5rem 0 0;
+}
+
+.text {
+	margin: 0 0 2rem;
+}
+
+.l-button {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.button {
+	display: block;
+	padding: .5rem;
+	color: #fff;
+	background: #ba2636;
+	text-decoration: none;
+	border-radius: 5px;
+	border-bottom: 3px solid #66141d;
+	position: relative;
+}
+
+.button:hover {
+	transition: .3s ease-in-out;
+	top: 3px;
+	border: none;
+}
+
+.result {
+	background: #ba2636;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 2rem;
+}
+
+.text-result {
+	color: #fff;
+	font-size : 3rem;
+	line-height: 200px;
+}
