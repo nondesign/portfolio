@@ -893,6 +893,10 @@ body a {
   }
 }
 
+.l-overview {
+  margin: 0 0 5rem;
+}
+
 .l-overview__img {
   margin: 0 0 2rem;
 }
@@ -920,6 +924,10 @@ body a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin: 0 0 10rem;
+  }
+  .l-overview:last-of-type {
+    margin: 0;
   }
   .l-overview__img {
     width: 45%;
