@@ -360,6 +360,7 @@
   .l-works-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .l-works-list li {

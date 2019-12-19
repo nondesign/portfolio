@@ -746,6 +746,8 @@ body a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .l-works-list li {
     width: calc((100% - 48px)/3);
