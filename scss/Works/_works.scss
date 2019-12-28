@@ -14,6 +14,8 @@
 }
 
 .l-overview__text__circle {
+  font-weight: bold;
+
   &:before {
     content: "";
     display: inline-block;

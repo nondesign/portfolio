@@ -453,7 +453,6 @@ body a {
 
 .l-about__message__contents {
   margin: 0 0 2rem;
-  font-size: .95rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -736,6 +735,12 @@ body a {
   display: inline-block;
   font-size: .875rem;
   background: #F5E431;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.l-works__button:hover {
+  opacity: .8;
 }
 
 @media screen and (min-width: 768px) {
@@ -904,6 +909,10 @@ body a {
 .l-overview__text dd {
   margin: 0 0 1rem;
   padding: 0 0 0 1.8rem;
+}
+
+.l-overview__text__circle {
+  font-weight: bold;
 }
 
 .l-overview__text__circle:before {

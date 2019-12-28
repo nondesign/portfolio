@@ -164,7 +164,6 @@
 
 .l-about__message__contents {
   margin: 0 0 2rem;
-  font-size: .95rem;
 }
 
 @media screen and (min-width: $tab) {
@@ -354,6 +353,11 @@
 	display: inline-block;
 	font-size: .875rem;
   background: #F5E431;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    opacity: .8;
+  }
 }
 
 @media screen and (min-width: $tab) {
