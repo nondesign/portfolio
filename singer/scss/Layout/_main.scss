@@ -317,10 +317,9 @@
           transform: translateX(100%);
   padding: 68px 0 0;
   width: 100%;
-  background: #fff;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  background: #ddd;
+  background: #eee;
   z-index: 100;
 }
 
@@ -355,7 +354,7 @@
   display: block;
   text-decoration: none;
   color: #333;
-  padding: .5rem 3rem;
+  padding: 1rem 3rem;
 
   &:hover {
     color: $maincolor;
@@ -372,7 +371,6 @@
   .l-navList a {
     color: #333;
     padding: 0;
-
   }
 }
 
