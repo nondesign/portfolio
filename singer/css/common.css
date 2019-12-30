@@ -1,0 +1,674 @@
+@charset "UTF-8";
+/*============================
+･･･Faundation
+=============================*/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+/*============================
+･･･Base
+=============================*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP',sans-serif;
+  color: #333;
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+*[lang="en"] {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.clr:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*============================
+･･･Accessibility
+=============================*/
+.screen-reader-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+}
+
+/*============================
+･･･Layout
+=============================*/
+/*============================
+･･･wrapper
+=============================*/
+.l-wrapper {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*============================
+･･･header
+=============================*/
+.l-header {
+  padding: .8rem 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+
+.l-title a {
+  color: #333;
+}
+
+.l-title span {
+  display: block;
+  font-size: .75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .l-header > .l-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .l-title span {
+    font-size: .875rem;
+  }
+  .l-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/*============================
+･･･main 共通
+=============================*/
+.l-main {
+  padding: 4.375rem 0 0;
+}
+
+.l-section {
+  padding: 2rem 0;
+}
+
+.primary-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 0 2rem;
+  position: relative;
+  z-index: -1;
+}
+
+.primary-title:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  margin: auto;
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #FAC559;
+}
+
+@media screen and (min-width: 768px) {
+  .l-section {
+    padding: 5rem 0;
+  }
+  .primary-title {
+    font-size: 2rem;
+    margin: 0 0 3rem;
+  }
+}
+
+/*============================
+･･･main hero
+=============================*/
+.l-hero {
+  width: 100%;
+  height: calc(100vh - 4rem);
+  background: url(../img/hero.JPG) right/cover no-repeat;
+  position: relative;
+  z-index: -1;
+}
+
+/*============================
+･･･main news
+=============================*/
+.l-newsList {
+  margin: 0 0 3rem;
+}
+
+.l-newsList dt {
+  margin: 0 0 .5rem;
+}
+
+.l-newsList dd {
+  margin: 0 0 1rem;
+}
+
+.l-newsList dd a {
+  color: #333;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.l-newsList dd a:hover {
+  border-bottom: 3px solid #FAC559;
+}
+
+.news__date {
+  margin: 0 1rem 0 0;
+}
+
+.news__category {
+  background: #FAC559;
+  padding: 0 .5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .l-newsList {
+    width: 80%;
+    margin: 0 auto 3rem;
+  }
+  .l-newsList dt {
+    float: left;
+    clear: left;
+  }
+  .l-newsList dd {
+    padding: 0 0 0 13rem;
+    margin: 0 0 1.5rem;
+  }
+}
+
+/*============================
+･･･main profile
+=============================*/
+.profile__img {
+  width: 100%;
+  margin: 0 auto 1.5rem;
+}
+
+.profile__title {
+  font-size: 1rem;
+  margin: 0 0 1rem;
+}
+
+.sns {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: 0 .5rem 0 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.sns:hover {
+  opacity: .8;
+}
+
+.sns__twitter {
+  background: url(../img/icon_twitter.png) center/cover;
+}
+
+.sns__niconico {
+  background: url(../img/icon_niconico.png) center/cover;
+}
+
+.sns__youtube {
+  background: url(../img/icon_youtube.png) center/cover;
+}
+
+@media screen and (min-width: 768px) {
+  .l-profile {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .profile__img {
+    width: 40%;
+    margin: 0;
+  }
+  .profile__contents {
+    width: 55%;
+  }
+  .profile__title {
+    font-size: 1.25rem;
+  }
+}
+
+/*============================
+･･･contents
+=============================*/
+.l-choice {
+  margin: 0 0 1.5rem;
+}
+
+.l-choice li {
+  padding: .5rem 0;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.l-choice li a {
+  display: block;
+  color: #333;
+}
+
+.js-button.active {
+  background: #FAC559;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.video {
+  min-width: 320px;
+  margin: 0 auto 2rem;
+}
+
+.video iframe {
+  width: 100%;
+  height: 220px;
+}
+
+@media screen and (min-width: 768px) {
+  .l-choice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .l-choice li {
+    width: 33.33333%;
+  }
+  .singer,
+  .singer-collab,
+  .playing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .video {
+    width: calc((100% - 32px) / 2);
+    margin: 0 2rem 2rem 0;
+  }
+  .video:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .video {
+    width: calc((100% - 64px) / 3);
+  }
+  .video:nth-child(2n) {
+    margin-right: 2rem;
+  }
+  .video:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+/*============================
+･･･footer
+=============================*/
+.l-footer {
+  padding: 1.5rem 0;
+}
+
+.l-copyright {
+  text-align: center;
+}
+
+/*============================
+･･･微調整
+=============================*/
+.u-mb {
+  margin: 0 0 1rem;
+}
+
+/*============================
+･･･ドロワーメニュー
+=============================*/
+.l-navList {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  padding: 68px 0 0;
+  width: 100%;
+  background: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: #ddd;
+}
+
+.is-active .l-navList {
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+@media screen and (min-width: 768px) {
+  .l-navList {
+    position: static;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+  }
+}
+
+/*============================
+･･･navList詳細
+=============================*/
+.l-navList li {
+  border-bottom: 1px dotted #aaa;
+}
+
+.l-navList a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  padding: .5rem 3rem;
+}
+
+.l-navList a:hover {
+  color: #FAC559;
+}
+
+@media screen and (min-width: 768px) {
+  .l-navList li {
+    border: none;
+  }
+  .l-navList li + li {
+    margin: 0 0 0 3rem;
+  }
+  .l-navList a {
+    color: #333;
+    padding: 0;
+  }
+}
+
+/*============================
+･･･ハンバーガーボタン
+=============================*/
+.button-hamburger {
+  position: fixed;
+  top: 2.5%;
+  right: 2.5%;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: block;
+  outline: 0;
+  z-index: 100;
+}
+
+.hamburger {
+  width: 25px;
+  height: 2px;
+  background: #FAC559;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: "";
+  display: block;
+  background: inherit;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.hamburger:before {
+  top: -10px;
+}
+
+.hamburger:after {
+  top: 10px;
+}
+
+.is-active .hamburger {
+  background: transparent;
+}
+
+.is-active .hamburger:before,
+.is-active .hamburger:after {
+  top: 0;
+  background: #FAC559;
+}
+
+.is-active .hamburger:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.is-active .hamburger:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 768px) {
+  .button-hamburger {
+    display: none;
+  }
+}
+
+/*============================
+･･･ボタン
+=============================*/
+.l-button {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.button {
+  display: block;
+  background: #FAC559;
+  text-align: center;
+  color: #333;
+  padding: .5rem 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.button:hover {
+  opacity: .8;
+}
+
+/*============================
+･･･ページトップ
+=============================*/
+.l-pagetop {
+  position: fixed;
+  right: 2.5%;
+  bottom: 2.5%;
+  display: none;
+}
+
+.pagetop {
+  color: #333;
+  display: block;
+  background: #FAC559;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.pagetop:hover {
+  opacity: .8;
+}

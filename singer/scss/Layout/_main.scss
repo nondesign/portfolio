@@ -1,0 +1,504 @@
+/*============================
+･･･wrapper
+=============================*/
+
+.l-wrapper {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+/*============================
+･･･header
+=============================*/
+
+.l-header {
+  padding: .8rem 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+
+.l-title {
+  a {
+    color: #333;
+  }
+  span {
+    display: block;
+    font-size: .75rem;
+  }
+}
+
+@media screen and (min-width: $tab) {
+
+  .l-header > .l-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+
+  .l-title span {
+    font-size: .875rem;
+  }
+
+  .l-nav ul {
+    display: flex;
+  }
+}
+
+/*============================
+･･･main 共通
+=============================*/
+.l-main {
+  padding: (70px/16px)*1rem 0 0;
+}
+
+.l-section {
+  padding: 2rem 0;
+}
+
+.primary-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 0 2rem;
+  position: relative;
+  z-index: -1;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    margin: auto;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: $maincolor;
+  }
+}
+
+@media screen and (min-width: $tab) {
+  .l-section {
+    padding: 5rem 0;
+  }
+
+  .primary-title {
+    font-size: 2rem;
+    margin: 0 0 3rem;
+  }
+}
+
+/*============================
+･･･main hero
+=============================*/
+
+.l-hero {
+  width: 100%;
+  height: calc(100vh - 4rem);
+  background: url(../img/hero.JPG) right/cover no-repeat;
+  position: relative;
+  z-index: -1;
+}
+
+/*============================
+･･･main news
+=============================*/
+
+.l-newsList {
+  margin: 0 0 3rem;
+  dt {
+    margin: 0 0 .5rem;
+  }
+  dd {
+    margin: 0 0 1rem;
+    a {
+      color: #333;
+      border-bottom: 3px solid transparent;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        border-bottom: 3px solid $maincolor;
+      }
+    }
+  }
+}
+
+.news__date {
+  margin: 0 1rem 0 0;
+}
+.news__category {
+  background: $maincolor;
+  padding: 0 .5rem;
+}
+
+@media screen and (min-width: $tab) {
+  .l-newsList {
+    width: 80%;
+    margin: 0 auto 3rem;
+
+    dt {
+      float: left;
+      clear: left;
+    }
+    dd {
+      padding: 0 0 0 13rem;
+      margin: 0 0 1.5rem;
+    }
+  }
+}
+
+/*============================
+･･･main profile
+=============================*/
+
+.profile__img {
+  width: 100%;
+  margin: 0 auto 1.5rem;
+}
+
+.profile__title {
+  font-size: 1rem;
+  margin: 0 0 1rem;
+}
+
+.sns {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: 0 .5rem 0 0;
+  transition: all .3s ease-in-out;
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.sns__twitter {
+  background: url(../img/icon_twitter.png) center/cover;
+}
+
+.sns__niconico {
+  background: url(../img/icon_niconico.png) center/cover;
+}
+
+.sns__youtube {
+  background: url(../img/icon_youtube.png) center/cover;
+}
+
+@media screen and (min-width: $tab) {
+  .l-profile {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile__img {
+    width: 40%;
+    margin: 0;
+  }
+  .profile__contents {
+    width: 55%;
+  }
+  .profile__title {
+    font-size: 1.25rem;
+  }
+}
+
+/*============================
+･･･contents
+=============================*/
+
+.l-choice {
+  margin: 0 0 1.5rem;
+
+  li {
+    padding: .5rem 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    a {
+      display: block;
+      color: #333;
+    }
+  }
+}
+
+.js-button.active {
+  background: $maincolor;
+  transition: all .3s ease-in-out;
+}
+
+.video {
+  min-width: 320px;
+  margin: 0 auto 2rem;
+
+  iframe {
+  width: 100%;
+  height: 220px;
+  }
+}
+
+
+
+@media screen and (min-width: $tab) {
+  .l-choice {
+    display: flex;
+    li {
+      width: (100% / 3);
+    }
+  }
+
+  .singer,
+  .singer-collab,
+  .playing {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all .3s ease-in-out;
+  }
+  .video {
+    width: calc((100% - 32px) / 2);
+    margin: 0 2rem 2rem 0;
+
+    &:nth-child(2n) {
+    margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $desk) {
+    .video {
+    width: calc((100% - 64px) / 3);
+
+    &:nth-child(2n) {
+      margin-right: 2rem;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+/*============================
+･･･footer
+=============================*/
+
+.l-footer {
+  padding: 1.5rem 0;
+}
+
+.l-copyright {
+  text-align: center;
+}
+
+/*============================
+･･･微調整
+=============================*/
+
+.u-mb {
+  margin: 0 0 1rem;
+}
+
+/*============================
+･･･ドロワーメニュー
+=============================*/
+
+.l-navList {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  padding: 68px 0 0;
+  width: 100%;
+  background: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: #ddd;
+}
+
+.is-active .l-navList {
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+@media screen and (min-width: $tab) {
+  .l-navList {
+    position: static;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+  }
+}
+
+/*============================
+･･･navList詳細
+=============================*/
+.l-navList li {
+  border-bottom: 1px dotted #aaa;
+}
+
+.l-navList a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  transition: all .3s ease-in-out;
+  padding: .5rem 3rem;
+
+  &:hover {
+    color: $maincolor;
+  }
+}
+
+@media screen and (min-width: $tab) {
+  .l-navList li {
+    border: none;
+  }
+  .l-navList li + li {
+    margin: 0 0 0 3rem;
+  }
+  .l-navList a {
+    color: #333;
+    padding: 0;
+
+  }
+}
+
+/*============================
+･･･ハンバーガーボタン
+=============================*/
+.button-hamburger {
+  position: fixed;
+  top: 2.5%;
+  right: 2.5%;
+  text-decoration: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: block;
+  outline: 0;
+  z-index: 100;
+}
+
+.hamburger {
+  width: 25px;
+  height: 2px;
+  background: $maincolor;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all .3s ease-in-out;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: "";
+  display: block;
+  background: inherit;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  transition: inherit;
+}
+
+.hamburger:before {
+  top: -10px;
+}
+
+.hamburger:after {
+  top: 10px;
+}
+
+.is-active .hamburger {
+  background: transparent;
+}
+
+.is-active .hamburger:before,
+.is-active .hamburger:after {
+  top: 0;
+  background: $maincolor;
+}
+
+.is-active .hamburger:before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.is-active .hamburger:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media screen and (min-width: $tab) {
+  .button-hamburger {
+    display: none;
+  }
+}
+
+/*============================
+･･･ボタン
+=============================*/
+
+.l-button {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.button {
+  display: block;
+  background: $maincolor;
+  text-align: center;
+  color: #333;
+  padding: .5rem 0;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+/*============================
+･･･ページトップ
+=============================*/
+
+.l-pagetop {
+  position: fixed;
+  right: 2.5%;
+  bottom: 2.5%;
+  display: none;
+}
+
+.pagetop {
+  color: #333;
+  display: block;
+  background: $maincolor;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    opacity: .8;
+  }
+}
