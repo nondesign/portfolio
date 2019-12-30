@@ -213,7 +213,7 @@
   margin: 0 0 1.5rem;
 
   li {
-    padding: .5rem 0;
+    padding: 1rem 0;
     text-align: center;
     cursor: pointer;
     transition: all .3s ease-in-out;
@@ -246,6 +246,7 @@
   .l-choice {
     display: flex;
     li {
+      padding: .5rem 0;
       width: (100% / 3);
     }
   }
@@ -319,6 +320,7 @@
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background: #ddd;
+  z-index: 100;
 }
 
 .is-active .l-navList {
@@ -352,7 +354,6 @@
   display: block;
   text-decoration: none;
   color: #333;
-  transition: all .3s ease-in-out;
   padding: .5rem 3rem;
 
   &:hover {
@@ -392,7 +393,7 @@
   height: 40px;
   display: block;
   outline: 0;
-  z-index: 100;
+  z-index: 101;
 }
 
 .hamburger {

@@ -382,7 +382,7 @@ body {
 }
 
 .l-choice li {
-  padding: .5rem 0;
+  padding: 1rem 0;
   text-align: center;
   cursor: pointer;
   -webkit-transition: all .3s ease-in-out;
@@ -417,6 +417,7 @@ body {
     display: flex;
   }
   .l-choice li {
+    padding: .5rem 0;
     width: 33.33333%;
   }
   .singer,
@@ -486,6 +487,7 @@ body {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background: #ddd;
+  z-index: 100;
 }
 
 .is-active .l-navList {
@@ -519,8 +521,6 @@ body {
   display: block;
   text-decoration: none;
   color: #333;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
   padding: .5rem 3rem;
 }
 
@@ -559,7 +559,7 @@ body {
   height: 40px;
   display: block;
   outline: 0;
-  z-index: 100;
+  z-index: 101;
 }
 
 .hamburger {
