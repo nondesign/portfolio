@@ -226,10 +226,13 @@
   }
 }
 
+/* 選択リスト選んだとき　*/
 .js-button.active {
   background: $maincolor;
   transition: all .3s ease-in-out;
 }
+
+/* ビデオ　*/
 
 .video {
   min-width: 320px;
@@ -301,6 +304,15 @@
 
 .u-mb {
   margin: 0 0 1rem;
+}
+
+.u-link {
+  color: #333;
+  border-bottom: 2px solid $maincolor;
+  transition: all .3s ease-in-out;
+  &:hover {
+    background: $maincolor;
+  }
 }
 
 /*============================
@@ -465,14 +477,30 @@
 
 .button {
   display: block;
-  background: $maincolor;
   text-align: center;
   color: #333;
   padding: .5rem 0;
   transition: all .3s ease-in-out;
+  border: 2px solid $maincolor;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
 
-  &:hover {
-    opacity: .8;
+  &:after {
+    content: "";
+    position: absolute;
+    transition:all .5s ease;
+    top: 0;
+    bottom: 0;
+    left: -220px;
+    height: 44px;
+    width: 220px;
+    background: $maincolor;
+    z-index: -1;
+  }
+
+  &:hover:after {
+    left: 0;
   }
 }
 

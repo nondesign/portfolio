@@ -395,12 +395,14 @@ body {
   color: #333;
 }
 
+/* 選択リスト選んだとき　*/
 .js-button.active {
   background: #FAC559;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
+/* ビデオ　*/
 .video {
   min-width: 320px;
   margin: 0 auto 2rem;
@@ -469,6 +471,17 @@ body {
 =============================*/
 .u-mb {
   margin: 0 0 1rem;
+}
+
+.u-link {
+  color: #333;
+  border-bottom: 2px solid #FAC559;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.u-link:hover {
+  background: #FAC559;
 }
 
 /*============================
@@ -634,16 +647,33 @@ body {
 
 .button {
   display: block;
-  background: #FAC559;
   text-align: center;
   color: #333;
   padding: .5rem 0;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  border: 2px solid #FAC559;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
 }
 
-.button:hover {
-  opacity: .8;
+.button:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  top: 0;
+  bottom: 0;
+  left: -220px;
+  height: 44px;
+  width: 220px;
+  background: #FAC559;
+  z-index: -1;
+}
+
+.button:hover:after {
+  left: 0;
 }
 
 /*============================
